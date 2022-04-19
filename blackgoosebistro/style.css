@@ -1,0 +1,176 @@
+body {
+  background-color:#faf2e4;
+  margin: 0 10%;
+  font-family:sans-serif;
+}
+h1 {
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 1px solid #57b1dc;
+  margin-top:30px;
+}
+h2 {
+  color: #d1633c;
+  font-size: 1em;
+}
+#nav {
+  list-style-type:none;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.navlink {
+  text-decoration:none;
+  line-height:1.5em;
+  color: rgb(205, 88, 44);
+  transition: color, 0.3s;
+  padding:1.3em;
+}
+.navlink:hover {
+  color:rgb(219, 192, 6);
+}
+.navlink:active {
+  color:rgb(250, 176, 86);
+}
+article {
+  border-top: solid 1px;
+  padding:1em;
+}
+footer {border-top: 1px solid #57b1dc;
+  text-align:center;
+  padding-top:1em;
+}
+footer img {
+  width: 40px;
+  height:40px;
+  margin-left:.5em;
+  margin-right: .5em;
+}
+
+fieldset, input.buttons {
+  border-color: #d1633c;
+}
+
+input {
+  margin: 0.7em;
+}
+
+input.buttons {
+  padding:0.3em;
+  border-radius: 0px;
+  background:linear-gradient(to top left, rgb(247, 148, 30), rgb(248, 223, 46));
+  transition: background, 0.3s;
+}
+input.buttons:hover {
+  background:linear-gradient(to bottom right, rgb(247, 148, 30), rgb(248, 223, 46));
+}
+input.buttons:active {
+  background:rgb(247, 148, 30);
+}
+
+textarea {
+  width:400px;
+}
+
+/*Menu integrated CSS*/
+
+body.menu {
+  font-family: Georgia, serif;
+  font-size: 100%;
+  line-height: 175%;
+  margin: 0 15% 0;
+}
+
+header.menu {
+  margin-top: 0;
+  padding: 3em 1em 2em 1em;
+  text-align: center;
+  background-color: rgba(244, 241, 222, .5);
+}
+
+a.menu {
+text-decoration: none;
+color:#6C0E23;
+transition: color, 0.3s;
+}
+a.menu:visited {
+color:#3E0A16;
+}
+a.menu:hover {
+color:#A5223F;
+}
+a.menu:active {
+color:#C4143B;
+}
+
+h2.menu {
+font-size: 1em;
+text-transform: uppercase;
+letter-spacing: .5em;
+text-align: center;
+color:#6C0E23;
+}
+dt.menu {
+  font-weight: bold;
+}
+strong.menu {
+  font-style: italic;
+}
+ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+ul.menu li {
+  padding: 1em;
+}
+#info p {
+  font-style: italic;
+}
+.price {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+p.warning, sup {
+  font-size: small;
+}
+.label {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-style: normal;
+}
+
+h2.menu + p.menu {
+  text-align: center;
+  font-style: italic;
+}
+
+/*Corrections*/
+
+@media only screen and (max-width:791px) {
+  #nav {
+    flex-flow: column wrap;
+    text-align:center;
+  }
+  #nav li {
+    margin-top:0.5em;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  textarea {
+    width:auto;
+  }
+}
+
+@media only screen and (min-width:1100px) {
+  picture img{
+    width:60%;
+    margin-left:20%;
+  }
+}
