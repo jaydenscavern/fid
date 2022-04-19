@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Black Goose Bistro - Ordering</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="icons/favi.png">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Black Goose Bistro Order Form &bull; Pizza-on-Demand</h1>
+  <ul id="nav">
+  <li><a href="index.html" class="navlink">Home</a></li>
+  <li><a href="menu.html" class="navlink">Menu</a></li>
+  <li><a href="bgnews.html" class="navlink">News</a></li>
+  <li><a href="gallery.html" class="navlink">Gallery</a></li>
+  <li><a href="contact.html" class="navlink">Contact</a></li>
+  <li><a href="pizza.html" class="navlink"><strong>Order From Us!</strong></a></li>
+  <li><a href="jenskitchen/jenindex.html" class="navlink">Jen's Kitchen</a></li>
+  </ul>
+  <p>Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour</p>
+  <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
+      <fieldset>
+        <legend>Your Information</legend>
+          <label for="name">Your Name: </label><input type="text" id="firstname" name="customername" placeholder="John Doe" size="24" required><br>
+          <label for="phoneNumber">Phone Number: </label><input type="tel" id="phoneNumber" name="telephone" placeholder="123-456-7890" pattern="[0-9]{10}" required><br>
+          <label for="address">Address: </label><input type="text" name="address" id="address" required><br>
+          <label for="email">Email: </label><input type="email" id="email" name="email" required><br>
+          Delivery Instructions:<br><textarea name="instructions" rows="4" maxlength="400" placeholder="No more than 400 characters long."></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Design Your Pizza!</legend>
+          <fieldset>
+            <legend>Crust Options (Choose just one:)</legend>
+              <label><input type="radio" name="crust" value="white">Classic White</label>
+              <label><input type="radio" name="crust" value="multigrain">Multigrain</label>
+              <label><input type="radio" name="crust" value="cheese crust">Cheese-stuffed Crust</label>
+              <label><input type="radio" name="crust" value="gluten free">Gluten-free</label>
+          </fieldset>
+          <fieldset>
+          <legend>Toppings: <em>(Choose as many as you want)</em></legend>
+          <input type="checkbox" name="toppings[]" value="red sauce" checked>Red sauce<br>
+          <input type="checkbox" name="toppings[]" value="white sauce">
+          White sauce<br>
+          <input type="checkbox" name="toppings[]" value="mozzarella">
+          Mozzarella Cheese<br>
+          <input type="checkbox" name="toppings[]" value="pepperoni">
+          Pepperoni<br>
+          <input type="checkbox" name="toppings[]" value="mushrooms">
+          Mushrooms<br>
+          <input type="checkbox" name="toppings[]" value="peppers">
+          Peppers<br>
+          <input type="checkbox" name="toppings[]" value="anchovies">
+          Anchovies<br>
+      </fieldset>
+      <fieldset><legend>Number</legend>
+        <p>How many pizzas: <select name="pizzas" size="1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option></select>
+        </p>
+      </fieldset>
+    </fieldset>
+      <input type="submit" value="Bring me pizza!" class="buttons"> <input type="reset" class="buttons">
+  </form>
+  <footer><small>All content copyright &copy; 2017, Black Goose Bistro and Jennifer Robbins</small>
+  <p>
+  <img src="icons/facebook.svg" alt="facebook">
+  <img src="icons/instagram.svg" alt="instagram">
+  <img src="icons/twitter.svg" alt="twitter">
+</p>
+  </footer>
+</body>
+</html>
