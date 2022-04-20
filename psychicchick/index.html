@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="physic readings for the central florida by the physic chick. experienced physic, friendly, well-reviewed, five starred professional.">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="assets/favi.png">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <title>The Physic Chick</title>
+<!--Navi script-->
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 90) {
+      document.getElementById("header").style.padding = "1em 1em";
+      document.getElementById("header").style.backgroundColor = "rgba(10, 10, 10, 0.4)";
+      document.getElementById("logo").style.fontSize = "1.5em";
+      document.getElementById("logo").style.float = "left";
+      document.getElementById("nav").style.float = "right";
+      document.getElementById("nav").style.marginRight = "0";
+    } else {
+      document.getElementById("header").style.padding = "2em 0";
+      document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0)";
+      document.getElementById("logo").style.fontSize = "3em";
+      document.getElementById("logo").style.float = "none";
+      document.getElementById("nav").style.float = "none";
+      document.getElementById("nav").style.marginRight = "auto";
+    }
+  }
+</script>
+</head>
+<body>
+  <header id="header">
+    <h1 id="logo">&#10024;The Physic Chick &#10024;</h1>
+    <nav id="nav"><ul>
+      <li><a href="index.html">Home</a> |</li>
+      <li><a href="qualifications.html">My Qualifications</a> |</li>
+      <li><a href="reviews.html">Reviews</a> |</li>
+      <li><a href="contact.html">Contact Me</a> |</li>
+      <li><a href="services.html">Services</a> |</li>
+      <li><a href="products.html">Equipment I use</a></li>
+      </ul></nav>
+    </header>
+    <main>
+    <section id="The-Basic-Service" class="firstsection">
+      <h2>Do you ever feel trapped in your own head?</h2>
+      <img src="assets/lady.png" alt="Me chillaxin' at a table" class="img70">
+      <p>I've too seen the depths of the mind and what it can do to the soul. It's why I wanted to be a physic so much; a doctor of the spirit. The stress of everyday life can leave you as it did me&mdash;you too can be freed from the burdens of your own mind. <br><br><span class="emph">Let me think your thoughts for you!</span></p>
+    </section>
+    <section id="Disclaimer" class="homeimagehugger">
+      <h2>Required Disclaimer</h2>
+      <p>This being said, I'm required, by law, to state that I'm not a medical professional, and if you're having thoughts of harming yourself or others, you must seek mental help from a "psychiatrist". My friend recommends the <a href="https://centralfloridapsychiatricassociates.com/" target="_blank">Central Florida Psychiatric Associates</a>. <span class="hidden">And for the last time, it wasn't me.</span></p>
+    </section>
+    </main>
+    <footer>
+      <p>Reach out to me!</p>
+      <p>Email me at <a href="mailto:physicorlandochick@madeup.com" target="_blank">physicorlandochick@madeup.com</a> or call me at <a href="tel:+13210000000">(321) 000-0000</a></p>
+      <small>Design by Jayden Morningstar &copy; 2022</small>
+    </footer>
+</body>
+</html>

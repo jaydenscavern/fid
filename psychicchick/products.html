@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="physic readings for the central florida by the physic chick. experienced physic, friendly, well-reviewed, five starred professional.">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="assets/favi.png">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <title>The Physic Chick - Products</title>
+<!--Navi script-->
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 90) {
+      document.getElementById("header").style.padding = "1em 1em";
+      document.getElementById("header").style.backgroundColor = "rgba(10, 10, 10, 0.4)";
+      document.getElementById("logo").style.fontSize = "1.5em";
+      document.getElementById("logo").style.float = "left";
+      document.getElementById("nav").style.float = "right";
+      document.getElementById("nav").style.marginRight = "0";
+    } else {
+      document.getElementById("header").style.padding = "2em 0";
+      document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0)";
+      document.getElementById("logo").style.fontSize = "3em";
+      document.getElementById("logo").style.float = "none";
+      document.getElementById("nav").style.float = "none";
+      document.getElementById("nav").style.marginRight = "auto";
+    }
+  }
+</script>
+</head>
+<body>
+  <header id="header">
+    <h1 id="logo">&#10024;The Physic Chick &#10024;</h1>
+    <nav id="nav"><ul>
+      <li><a href="index.html">Home</a> |</li>
+      <li><a href="qualifications.html">My Qualifications</a> |</li>
+      <li><a href="reviews.html">Reviews</a> |</li>
+      <li><a href="contact.html">Contact Me</a> |</li>
+      <li><a href="services.html">Services</a> |</li>
+      <li><a href="products.html">Equipment I use</a></li>
+      </ul></nav>
+    </header>
+    <main>
+      <div class="container">
+        <figure>
+            <img src="assets/amethyst.jpg" alt="Amethyst is an essential crystal I use in crystal therapy.">
+            <figcaption>Amethyst is an essential crystal I use in crystal therapy.</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/mymind.jpg" alt="I use my own mind, of course.">
+            <figcaption>I use my own mind, of course.</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/oils.jpg" alt="Essential oils I use in scent/taste therapy">
+            <figcaption>A look of the many different oils I use in scent and/or taste therapy.</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/sleepy-lady.png" alt="You!">
+            <figcaption>I need you to make it all happen! Thank you all for your continued support and lovely minds</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p>Reach out to me!</p>
+      <p>Email me at <a href="mailto:physicorlandochick@madeup.com" target="_blank">physicorlandochick@madeup.com</a> or call me at <a href="tel:+13210000000">(321) 000-0000</a></p>
+      <small>Design by Jayden Morningstar &copy; 2022</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="physic readings for the central florida by the physic chick. experienced physic, friendly, well-reviewed, five starred professional.">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="icon" type="image/x-icon" href="assets/favi.png">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <title>The Physic Chick</title>
+<!--Navi script-->
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 90) {
+      document.getElementById("header").style.padding = "1em 1em";
+      document.getElementById("header").style.backgroundColor = "rgba(10, 10, 10, 0.4)";
+      document.getElementById("logo").style.fontSize = "1.5em";
+      document.getElementById("logo").style.float = "left";
+      document.getElementById("nav").style.float = "right";
+      document.getElementById("nav").style.marginRight = "0";
+    } else {
+      document.getElementById("header").style.padding = "2em 0";
+      document.getElementById("header").style.backgroundColor = "rgba(0, 0, 0, 0)";
+      document.getElementById("logo").style.fontSize = "3em";
+      document.getElementById("logo").style.float = "none";
+      document.getElementById("nav").style.float = "none";
+      document.getElementById("nav").style.marginRight = "auto";
+    }
+  }
+</script>
+</head>
+<body>
+  <header id="header">
+    <h1 id="logo">&#10024;The Physic Chick &#10024;</h1>
+    <nav id="nav"><ul>
+      <li><a href="index.html">Home</a> |</li>
+      <li><a href="qualifications.html">My Qualifications</a> |</li>
+      <li><a href="reviews.html">Reviews</a> |</li>
+      <li><a href="contact.html">Contact Me</a> |</li>
+      <li><a href="services.html">Services</a> |</li>
+      <li><a href="products.html">Equipment I use</a></li>
+      </ul></nav>
+    </header>
+    <main>
+      <p class="REMINDER">Upon completion of this form, I will tell you my location.
+        <br>BY COMPLETING THIS FORM, YOU'RE PROMISING TO KEEP ANY TECHNIQUES I USE SECRET. ANY DIVULGED SECRETS WILL RESULT IN SERIOUS CONSEQUENCES.<br>
+      <small>Remember: I've been in your mind.</small></p>
+      <form>
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name">Your Name: </label><input type="text" id="firstname" name="customername" placeholder="John Doe" size="24" required><br>
+          <label for="phoneNumber">Phone Number: </label><input type="tel" id="phoneNumber" name="telephone" placeholder="123-456-7890" pattern="[0-9]{10}" required><br>
+          <label for="address">Address: </label><input type="text" name="address" id="address" required><br>
+          <label for="email">Email: </label><input type="email" id="email" name="email" required><br>
+          Your Inquiry:<br><textarea name="ignore" rows="4" maxlength="100" placeholder="No more than 100 characters long, please."></textarea>
+        </fieldset>
+        <input type="submit">
+      </form>
+    </main>
+    <footer>
+      <p>Reach out to me!</p>
+      <p>Email me at <a href="mailto:physicorlandochick@madeup.com" target="_blank">physicorlandochick@madeup.com</a> or call me at <a href="tel:+13210000000">(321) 000-0000</a></p>
+      <small>Design by Jayden Morningstar &copy; 2022</small>
+    </footer>
+</body>
+</html>
