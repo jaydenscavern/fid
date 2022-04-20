@@ -1,0 +1,1 @@
+I found out after that the name "psychic chick" has been taken by other people in different places. This is not about them at all, I'm just making something up at 4am. It's about a psychic that doesn't really talk about telling the future or crystal therapies as much as she talks about literally getting into people's minds. 
