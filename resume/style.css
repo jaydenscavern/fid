@@ -1,0 +1,160 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --leafygreen: #678d58;
+  --h1width: 568.328px;
+}
+
+body {
+  margin:0;
+  padding: 0 8%;
+}
+
+h1 {
+  font-size:2.5em;
+  border-bottom: 1px solid var(--leafygreen);
+  padding-bottom:0.3em;
+  width:calc(var(--h1width) + 4em);
+  letter-spacing:1pt;
+}
+
+.highlight {
+  font-size:1.5em;
+  line-height: 1.4em;
+}
+
+h2, h1, h3 {
+  color:var(--leafygreen);
+  line-height:1.4em;
+}
+
+h2, h1 {
+    font-variant:small-caps;
+}
+
+.container {
+  display:flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+      .container section {
+        padding: 2em;
+        background-color:#FAF2DE;
+        width:20em;
+      }
+      p.normal {
+        font-size: 1.2em;
+        line-height:1.5em;
+      }
+      .container h2 {
+        font-size: 1.7em;
+      }
+      a {
+        color:#7D9864;
+        text-decoration:none;
+        transition: color, 0.3s;
+      }
+      a:hover {
+        color:#AFCA97;
+      }
+      a:active {
+        color:#486031;
+      }
+      .container .horizontallist {
+        display:flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+      }
+      .container ul, footer ul {
+        line-height:1.5em;
+        list-style:none;
+      }
+      /*was underline because it added a border, but I decided that didn't look all that good so now it's just a margin thing*/
+      .container li.underline {
+        margin-bottom: 1em;
+      }
+hr {
+ border-top: 1px solid var(--leafygreen);
+}
+footer p, h3 {
+    font-size:1.2em;
+}
+footer {
+  margin-left:0;
+  margin-right:0;
+  margin-top:1em;
+  margin-bottom:3em;
+}
+      footer li {
+        display:flex;
+        justify-content: center;
+        margin: 0 2em;
+      }
+      footer ul {
+        display:flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+      }
+
+.gallery {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.workcont {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.workcont section {
+  width:25em;
+}
+
+.gallery .thumbnails {
+  max-width: 175px;
+  margin: 1em 2em;
+  transition: filter, 0.3s;
+}
+.thumbnails:hover {
+  filter: brightness(120%);
+}
+.thumbnails:active {
+  filter: brightness(100%);
+}
+/*Corrections*/
+
+@media only screen and (max-width:1852px) {
+  .container {
+    justify-content: center;
+    align-items: stretch;
+  }
+  .container section {
+    margin: 1px;
+  }
+}
+
+@media only screen and (max-width:936px) {
+  .container section {
+    width:100%;
+  }
+  h1 {
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:1455px) {
+  .workcont {
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+    width:100%;
+  }
+  .workcont section {
+    width:80%;
+    margin: 0.5em 0;
+  }
+}
